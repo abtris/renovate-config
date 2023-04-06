@@ -4,5 +4,13 @@
     "config:base"
   ],
   "reviewersFromCodeOwners": true,
-  "assigneesFromCodeOwners": true
+  "labels": ["renovate", "dependencies"],
+  "assigneesFromCodeOwners": true,
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
+  "packageRules": [
+      {
+          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+          "automerge": true
+      }
+  ]
 }
