@@ -5,6 +5,9 @@
   ],
   "reviewersFromCodeOwners": true,
   "labels": ["renovate", "dependencies"],
+  "reviewers": [
+    "abtris"
+  ],
   "assigneesFromCodeOwners": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "packageRules": [
