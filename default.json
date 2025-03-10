@@ -5,7 +5,7 @@
   ],
   "reviewersFromCodeOwners": true,
   "labels": ["renovate", "dependencies"],
-  "reviewers": [
+  "additionalReviewers": [
     "abtris"
   ],
   "assigneesFromCodeOwners": true,
