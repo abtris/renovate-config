@@ -1,0 +1,26 @@
+name: Validate Renovate Config
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'default.json'
+      - '.github/workflows/validate-renovate-config.yml'
+  pull_request:
+    paths:
+      - 'default.json'
+      - '.github/workflows/validate-renovate-config.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate Renovate config
+        uses: rinchsan/renovate-config-validator@v0.2.0
+        with:
+          pattern: 'default.json'
+
